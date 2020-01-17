@@ -8,20 +8,20 @@ namespace Workbook_Lab_2
         static void Main(string[] args)
         {
 
-            int length, width;
+            decimal length, width;
             string yesOrNo;
 
             Console.WriteLine("Welcome to Grand Circus' Room Detail Generator!");
 
             Console.WriteLine("Enter width.");
-            width = Convert.ToInt32(Console.ReadLine());
+            width = decimal.Parse(Console.ReadLine());
 
             Console.WriteLine("Enter length.");
-            length = Convert.ToInt32(Console.ReadLine());
+            length = decimal.Parse(Console.ReadLine());
 
-            double result = (width * length);
+            decimal result = (width * length);
 
-            double perimeter = 2 * length + 2 * width;
+            decimal perimeter = 2 * length + 2 * width;
 
             Console.WriteLine("The area of the room is " + result);
             Console.WriteLine("The perimeter of the room is " + perimeter);
@@ -37,10 +37,10 @@ namespace Workbook_Lab_2
 
                 {
                     Console.WriteLine("Enter width.");
-                    width = Convert.ToInt32(Console.ReadLine());
+                    width = (decimal)Int32.Parse(Console.ReadLine());
 
                     Console.WriteLine("Enter length.");
-                    length = Convert.ToInt32(Console.ReadLine());
+                    length = (decimal)Int32.Parse(Console.ReadLine());
 
                     result = width * length;
 
